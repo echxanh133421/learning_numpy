@@ -1,0 +1,18 @@
+-Thư viện NumPy là một thư viện Python phổ biến được sử dụng cho các ứng dụng tính toán khoa học và là từ viết tắt của "Numerical Python".
+-Các hoạt động của NumPy được chia thành ba loại chính: Biến đổi Fourier và Thao tác hình dạng , Các phép toán toán học và logic , và Đại số tuyến tính và Tạo số ngẫu nhiên . Để làm cho nó nhanh nhất có thể, NumPy được viết bằng C và Python.
+-Ưu điểm của NumPy
+NumPy có một số lợi thế so với việc sử dụng các hàm toán học Python cốt lõi, một vài trong số đó được nêu ở đây:
++NumPy cực kỳ nhanh khi so sánh với Python lõi nhờ sử dụng nhiều phần mở rộng C.
++Nhiều thư viện Python nâng cao, chẳng hạn như Scikit-Learn, Scipy và Keras, sử dụng rộng rãi thư viện NumPy. Do đó, nếu bạn có kế hoạch theo đuổi sự nghiệp trong khoa học dữ liệu hoặc học máy, NumPy là một công cụ rất tốt để làm chủ.
++NumPy đi kèm với nhiều chức năng tích hợp sẵn, trong Python cốt lõi sẽ sử dụng một chút mã tùy chỉnh hợp lý.
+
+-vidu:so sánh code thuần túy và code với numpy:
++code thuần túy:
+x = [2, 3, 4, 5, 6]
+y = [a + 2 for a in x]
++code numpy
+import numpy as np
+nums = np.array([2, 3, 4, 5, 6])
+nums2 = nums + 2
+>>> nhận xét là code thuần túy phải duyệt list
+>>> còn nhiều thú mà numpy mạnh mẽ hơn thế

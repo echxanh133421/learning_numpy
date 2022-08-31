@@ -1,0 +1,65 @@
+- cách tạo mảng 1 chiều 2 chiều:
++ xem lại ở bai_1_numpy_basic
+
+
+-phương thức arange():tạo ra 1 mảng với giá trị tương ứng với tham số truyền vào 
++vidu:
+nums = np.arange(2, 7)
+kq: >> array([2,3,4,5,6])
++vidu2: nếu thêm tham ssoo thứ 3 thì sẽ là bước nhảy:
+nums=np.arange(2,7,2)
+kq: >> array([2,4,6])
+
+
+-phương thức zeros():tạo ra mảng số 0
++vidu1: mảng 1 chiều:
+zeros = np.zeros(5)
+kq: >> array([0., 0., 0., 0., 0.])
++vidu2: mảng hai chiều:
+zeros = np.zeros((5, 4))
+kq:>> array([[0., 0., 0., 0.],
+             [0., 0., 0., 0.],
+             [0., 0., 0., 0.],
+             [0., 0., 0., 0.],
+             [0., 0., 0., 0.]])
+
+
+-phương thức ones():--> giống như zeros nhưng các phần tử là số 1
+
+
+-phương thức linspace(): có 3 tham số đầu vào, sô bắt đầu, số kết thúc, số lượng số 
+                         phương thức tạo ra mảng với các phần tử mảng cách đều nhau
++vidu: tạo mảng 10 phần tử cách đều nhau bắt đầu từ 1 kết thusac 10
+lin = np.linspace(1, 10, 10)
+kq:>> array([1., 2., 3., 4., 5., 6., 7., 8., 9., 10.])
+
+
+-phương thức eye():tạo ra ma trận đơn vị có kích thước là tham số truyền vào
++vidu: tạo ma trận đường chéo 4x4
+idn = np.eye(4)
+kq:>> array([[1., 0., 0., 0.],
+             [0., 1., 0., 0.],
+             [0., 0., 1., 0.],
+             [0., 0., 0., 1.]])
+
+
+-phương thức rand():tạo mảng ngẫu nhiên   (method randn())
++vidu: tạo mảng ngẫu nhiên kích thước 2x3
+random = np.random.rand(2, 3)
+kq:>> array([[0.26818562, 0.65506793, 0.50035001],
+             [0.527117  , 0.445688  , 0.99661   ]])
++vidu: tạo ma trận với phân phối chuẩn(gaussian):
+random = np.random.randn(2, 3)
+
+
+-phương thức randint(): tạo mảng số nguyên ngẫu nhiên
++vidu: tạo mảng số nguyên ngẫu nhiên gồm 5 số, trong khoảng từ 50-100
+random = np.random.randint(50, 100, 5)
+kq:>> array([54, 59, 84, 62, 74])
+
+
+
+
+
+
+
