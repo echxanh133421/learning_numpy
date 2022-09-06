@@ -1,0 +1,53 @@
+*****mảng 1 chiều *****
+
+-truy xuất đến 1 phần tử thuộc mảng:
+vd:
+nums=np.arange(1,16)
+print(nums[2])
+kq:>> 3
+
+-in ra 1 loạt các số bằng cách như sau:
+print(nums[1:8])
+kq:>> [2 3 4 5 6 7 8]
+
+-có thể in có bước nhảy bằng cách thêm 1 tham số thứ 3:
+nums[start:finish:step]
+
+**** mảng 2 chiều ****
+
+-vidu:
+nums2d=np.array(([1,2,3],[4,5,6],[7,8,9]))
+print(nums2d)
+
+kq:>> [[1 2 3]
+       [4 5 6]
+       [7 8 9]]
+
+print(nums2d[0,0])
+kq:>> 1
+
+print(nums2d[2, 2])
+kq:>> 9
+
+print(nums2d[0])
+kq:>> [1 2 3]
+
+print(nums2d[:,0])
+kq:>> print(nums2d[:,0])
+
+print('in ra 2 hang dau:')
+print(nums2d[0:2,:])
+print('in ra hai cột đầu')
+print(nums2d[:,0:2])
+kq:>> 
+in ra 2 hang dau:
+[[1 2 3]
+ [4 5 6]]
+in ra hai cột đầu
+[[1 2]
+ [4 5]
+ [7 8]]
+
+
+
+

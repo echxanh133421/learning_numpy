@@ -44,7 +44,7 @@ kq:>> array([[1., 0., 0., 0.],
 
 
 -phương thức rand():tạo mảng ngẫu nhiên   (method randn())
-+vidu: tạo mảng ngẫu nhiên kích thước 2x3
++vidu: tạo mảng ngẫu nhiên kích thước 2x3 có giá trị nawfmg trong khoảng 0-1
 random = np.random.rand(2, 3)
 kq:>> array([[0.26818562, 0.65506793, 0.50035001],
              [0.527117  , 0.445688  , 0.99661   ]])
@@ -56,6 +56,27 @@ random = np.random.randn(2, 3)
 +vidu: tạo mảng số nguyên ngẫu nhiên gồm 5 số, trong khoảng từ 50-100
 random = np.random.randint(50, 100, 5)
 kq:>> array([54, 59, 84, 62, 74])
+
+
+-phương thức reshape(): chuyển từ array sang ma trận có cùng số phần tử
++ví dụ:
+nums = np.arange(1, 17)
+nums2 = nums.reshape(4, 4)
+kq:>> array([[ 1,  2,  3,  4],
+             [ 5,  6,  7,  8],
+             [ 9, 10, 11, 12],
+             [13, 14, 15, 16]])
+
+-tìm giá trị max/min trong mảng :
+random = np.random.randint(1, 100, 5) #tạo ra mảng 5 số nguyên random trong đoạn 1-100
+print(random)                         #in kết quả ra
+
+xmin = random.min()                   #tìm giá trị min của mảng 
+print(xmin)                           #kết quả giá trị min của mảng
+
+-tìm chỉ mục của phần tử có giá trị max/min trong mảng: dùng method : argmin() và argmax()
+
+
 
 
 
